@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Youstina Samweel Ryad | Mechanical Power Engineer</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Sora:wght@300;400;600;700&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#E7E9EB;--surface:#F6F7F8;--ink:#1A1D20;--muted:#5B636B;--line:#C5CACF;--grid:rgba(60,70,80,.08);--g1:#8A9299;--g2:#2A2F34;--node:#4A5158}
+@media (prefers-color-scheme:dark){:root{--bg:#111314;--surface:#1A1D1F;--ink:#ECEEF0;--muted:#9AA1A8;--line:#2E3337;--grid:rgba(200,205,210,.05);--g1:#8E979F;--g2:#D8DCE0;--node:#B8BEC4}}
+html{scroll-padding-top:70px;scroll-behavior:smooth}
+*,*::before,*::after{box-sizing:border-box}
+body{margin:0;color:var(--ink);font-family:Sora,"Segoe UI",Arial,sans-serif;line-height:1.7;font-size:16px;background-color:var(--bg);background-image:linear-gradient(var(--grid) 1px,transparent 1px),linear-gradient(90deg,var(--grid) 1px,transparent 1px);background-size:44px 44px}
+a{color:inherit}:focus-visible{outline:3px solid var(--node);outline-offset:3px}
+[hidden]{display:none !important}
+.emo{filter:grayscale(1)}
+header.top{position:sticky;top:0;z-index:20;background:color-mix(in srgb,var(--bg) 85%,transparent);backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
+.bar{max-width:1060px;margin:0 auto;padding:12px 24px;display:flex;align-items:center;justify-content:space-between;gap:16px}
+.logo{font-weight:700;text-decoration:none}.bar nav{display:flex;gap:20px;font-size:14px;color:var(--muted)}.bar nav a{text-decoration:none}.bar nav a:hover{color:var(--ink)}
+.wrap{max-width:1060px;margin:0 auto;padding:0 24px}
+.flow{position:relative;padding-left:72px}
+.rail,.rail-fill{position:absolute;left:23px;top:0;width:6px;border-radius:3px}.rail{bottom:0;background:var(--line)}.rail-fill{height:0;background:linear-gradient(var(--g1),var(--g2))}
+.stage{position:relative;padding:0 0 88px}
+.stage::before{content:"";position:absolute;left:-60px;top:8px;width:22px;height:22px;border-radius:50%;background:var(--ink);border:4px solid var(--bg);box-shadow:0 0 0 2px var(--ink)}
+.num{display:block;font-size:12px;letter-spacing:.14em;color:var(--muted);font-weight:600}
+.stage h2{font-size:32px;margin:2px 0 6px;line-height:1.25}.lead{color:var(--muted);margin:0 0 28px;max-width:38em}
+.hero{padding:64px 0 80px}
+.gear{position:absolute;right:-30px;top:20px;width:360px;max-width:55%;color:var(--g1);opacity:.2;pointer-events:none;animation:spin 70s linear infinite}
+@keyframes spin{to{transform:rotate(360deg)}}
+@media (prefers-reduced-motion:reduce){.gear{animation:none}html{scroll-behavior:auto}}
+.eyebrow{display:inline-block;border:1px solid var(--line);background:var(--surface);border-radius:999px;padding:4px 14px;font-size:13px;color:var(--muted);margin-bottom:18px}
+.hero h1{font-size:clamp(36px,6vw,66px);line-height:1.08;margin:0 0 18px;font-weight:700;letter-spacing:-.025em;position:relative}
+.hero h1 .t{background:linear-gradient(90deg,var(--g1),var(--g2));-webkit-background-clip:text;background-clip:text;color:transparent}
+.hero p{font-size:18px;color:var(--muted);max-width:34em;margin:0 0 28px;position:relative;white-space:pre-line}
+.btns{display:flex;flex-wrap:wrap;gap:10px;position:relative}
+.btn{display:inline-block;background:var(--ink);color:var(--bg);padding:12px 24px;text-decoration:none;border-radius:10px;border:1.5px solid var(--ink);font:inherit;font-weight:600;cursor:pointer}
+.btn.ghost{background:none;color:var(--ink)}
+.cards{display:grid;grid-template-columns:repeat(2,1fr);gap:22px}.cards.three{grid-template-columns:repeat(3,1fr)}
+.card{background:var(--surface);border:1px solid var(--line);border-radius:16px;overflow:hidden;display:flex;flex-direction:column;transition:transform .2s,box-shadow .2s}
+.card:hover{transform:translateY(-4px);box-shadow:0 14px 34px rgba(0,0,0,.14)}
+.card .im{aspect-ratio:16/10;background:linear-gradient(135deg,var(--line),var(--surface));display:flex;align-items:center;justify-content:center;font-size:44px;overflow:hidden}
+.card .im img{width:100%;height:100%;object-fit:cover;cursor:zoom-in;display:block}
+.card .bd{padding:20px 22px 22px;display:flex;flex-direction:column;flex:1}
+.card .yr{font-size:13px;color:var(--muted);font-weight:600}.card h3{font-size:19px;margin:2px 0 8px;line-height:1.35}
+.card p{margin:0 0 14px;color:var(--muted);font-size:15px;flex:1;white-space:pre-line}
+.res{background:var(--bg);border-left:4px solid var(--ink);padding:8px 12px;font-size:14px;font-weight:600;margin-bottom:14px;border-radius:4px}
+.card a.lnk{font-size:14px;font-weight:600;margin-top:14px}
+.chips{display:flex;flex-wrap:wrap;gap:8px}.chips span{background:var(--bg);border:1px solid var(--line);padding:2px 12px;border-radius:999px;font-size:13px}
+.chips.big span{font-size:15px;padding:6px 18px;background:var(--surface)}
+.about{display:grid;grid-template-columns:240px 1fr;gap:32px;align-items:start}
+.ph{width:100%;aspect-ratio:1;border-radius:20px;background:linear-gradient(135deg,var(--line),var(--surface));display:flex;align-items:center;justify-content:center;font-size:72px;overflow:hidden;border:1px solid var(--line)}
+.ph img{width:100%;height:100%;object-fit:cover}
+.about p{margin:0 0 18px;font-size:17px}
+.facts{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:12px}
+.facts div{background:var(--surface);border:1px solid var(--line);border-radius:12px;padding:12px 16px;font-size:14px}.facts small{display:block;color:var(--muted)}
+.tl{list-style:none;margin:0;padding:0;border-left:2px dashed var(--line)}
+.tl li{position:relative;padding:0 0 28px 28px}.tl li::before{content:"";position:absolute;left:-7px;top:8px;width:12px;height:12px;border-radius:50%;background:var(--ink)}
+.tl time{font-size:13px;color:var(--muted);font-weight:600}.tl h3{margin:2px 0 0;font-size:18px}.tl .org{color:var(--muted);font-size:14px;font-weight:600}.tl p{margin:4px 0 0;color:var(--muted);font-size:15px;max-width:38em;white-space:pre-line}
+.aw{padding:20px 22px}.aw h3{margin:0 0 6px;font-size:17px}.aw p{margin:0;flex:none}
+.contact .mail{font-size:clamp(20px,4vw,30px);font-weight:600}.links{display:flex;flex-wrap:wrap;gap:12px;margin:20px 0}
+footer{padding:28px 0;color:var(--muted);font-size:14px;border-top:1px solid var(--line)}
+#lb{position:fixed;inset:0;z-index:60;background:rgba(0,0,0,.85);display:flex;align-items:center;justify-content:center;padding:24px;cursor:zoom-out}#lb img{max-width:100%;max-height:100%;border-radius:10px}
+@media (max-width:760px){.flow{padding-left:52px}.rail,.rail-fill{left:13px}.stage::before{left:-50px}.cards,.cards.three,.about{grid-template-columns:1fr}.bar nav{display:none}.ph{max-width:200px}.gear{opacity:.12}}
+</style>
+</head>
+<body>
+<header class="top"><div class="bar"><a class="logo" href="#top"><span class="emo">⚙️</span> <span id="brand"></span></a><nav><a href="#about">About</a><a href="#projects">Projects</a><a href="#training">Training</a><a href="#skills">Skills</a><a href="#awards">Activities</a><a href="#contact">Contact</a></nav></div></header>
+<div class="wrap"><div class="flow" id="flow">
+<div class="rail" aria-hidden="true"></div><div class="rail-fill" id="fill" aria-hidden="true"></div>
+
+<section class="stage hero" id="top">
+<svg class="gear" viewBox="0 0 400 400" aria-hidden="true"><g fill="none" stroke="currentColor" stroke-width="3"><circle cx="200" cy="200" r="122"/><circle cx="200" cy="200" r="52"/><circle cx="200" cy="200" r="16" fill="currentColor"/><g id="tooth"><rect x="182" y="56" width="36" height="48" rx="5"/></g><use href="#tooth" transform="rotate(30 200 200)"/><use href="#tooth" transform="rotate(60 200 200)"/><use href="#tooth" transform="rotate(90 200 200)"/><use href="#tooth" transform="rotate(120 200 200)"/><use href="#tooth" transform="rotate(150 200 200)"/><use href="#tooth" transform="rotate(180 200 200)"/><use href="#tooth" transform="rotate(210 200 200)"/><use href="#tooth" transform="rotate(240 200 200)"/><use href="#tooth" transform="rotate(270 200 200)"/><use href="#tooth" transform="rotate(300 200 200)"/><use href="#tooth" transform="rotate(330 200 200)"/><path d="M200 148V78M200 252v70M148 200H78M252 200h70"/></g></svg>
+<span class="eyebrow"><span class="emo">⚡</span> Mechanical Power Engineering</span>
+<h1>Hi, I’m <span id="heroName"></span>.<br><span class="t" id="heroTitle"></span></h1>
+<p id="heroTag"></p>
+<div class="btns"><a class="btn" href="#projects">See my projects</a><a class="btn ghost" id="cvBtn" hidden>Download CV</a><a class="btn ghost" href="#contact">Get in touch</a></div>
+</section>
+
+<section class="stage" id="about"><span class="num">01 / ABOUT</span><h2>About me</h2><p class="lead">A short introduction.</p><div class="about"><div class="ph" id="photo"></div><div><p id="bio"></p><div class="facts" id="facts"></div></div></div></section>
+<section class="stage" id="projects"><span class="num">02 / PROJECTS</span><h2>Projects</h2><p class="lead">Selected work, from the most recent to the earliest.</p><div class="cards" id="projList"></div></section>
+<section class="stage" id="training"><span class="num">03 / TRAINING</span><h2>Training &amp; Certificates</h2><p class="lead">Hands-on experience and formal certification.</p><ol class="tl" id="certList"></ol></section>
+<section class="stage" id="skills"><span class="num">04 / SKILLS</span><h2>Skills</h2><p class="lead">The tools and fundamentals I use day to day.</p><div class="chips big" id="skillList"></div></section>
+<section class="stage" id="awards"><span class="num">05 / ACTIVITIES</span><h2>Achievements &amp; Activities</h2><p class="lead">Competitions, student teams, volunteering and more.</p><div class="cards three" id="awardList"></div></section>
+<section class="stage contact" id="contact"><span class="num">06 / CONTACT</span><h2>Let’s talk</h2><p class="lead">Open to internships and junior roles in power engineering.</p><a class="mail" id="mail"></a><div class="links" id="links"></div></section>
+</div>
+<footer>© 2026 <span id="footName"></span> · Mechanical Power Engineering</footer></div>
+
+<div id="lb" hidden><img alt=""></div>
+
+<script>
+
+const D={
+  name:"Youstina Samweel Ryad",
+  title:"Mechanical Power Engineer",
+  tagline:"Passionate engineering student deeply enthusiastic about robotics, mechanical design, Cyber security, Ai, and programming.\nEager to bridge the gap between traditional mechanical systems and smart, intelligent technologies.",
+  email:"youstinaryad@gmail.com",
+  linkedin:"https://www.linkedin.com/in/youstina-ryad-5a0b85378/",
+  github:"https://github.com/youstinaryad",
+  cv:"YOUSTINA SAMWEEL RYAD.pdf",
+  photo:"photo_1.jpg",
+  bio:"Mechanical power engineering student passionate about energy systems, building services and power plants. I enjoy turning calculations into designs that actually work.",
+  location:"Alexandria, Egypt",
+  education:"Mechanical Power Engineering Student - Alexandria University",
+  languages:"Arabic (native), English (C1), German (B2)",
+  skills:"Advanced level in Office, MATLAB, Python, C++, SolidWorks - 3D Modeling, Autodesk Revit – basic MEP Modeling, AutoCAD – Engineering drawing models, Adaptability, Teamwork and collaboration, Problem-solving, Critical Thinking, Time Management",
+  projects:[
+    {year:"2026",title:"Box Transport System",desc:"Developing a complete model that involved creating a 3D design in SolidWorks, performing analysis using MATLAB and Python, and ultimately constructing the physical prototype using wood and 3D-printed components.",result:"Transport boxes like conveyer in companies",tools:"SOLIDWORKS, MATLAB",link:"https://drive.google.com/drive/folders/11UZ6d0M1E6AO8RIhTTRraCoGtk9URtfV?usp=drive_link",img:"photo_2.jpg"},
+    {year:"2025",title:"Rotational Viscometer",desc:"I integrated mechanical design, fluid mechanics, and electrical systems to build a rotational viscometer. This process encompassed everything from drafting the model in AutoCAD and selecting the appropriate motor and sensors, to calibrating the device using various fluids, 3D-printing the final model, and programming it via the Arduino platform.",result:"",tools:"AutoCAD, Arduino, MATLAB",link:"https://drive.google.com/drive/folders/1YQbI1Nd4Suc1npBdUca-M4Oxng7fH3xI?usp=sharing",img:"photo_3.jpg"},
+    {year:"2025",title:"Fiber-Optic Thermometer",desc:"Researched fiber optic thermometer technologies, focusing on their working principles, components, and industrial applications.\nCompiled and analyzed key technical specifications, comparing their performance and advantages against conventional temperature sensors.",result:"",tools:"PowerPoint",link:"https://drive.google.com/drive/folders/1c-nfKGFjtHiHFRQtFpufLANeeu0EIeF-?usp=drive_link",img:"photo_4.jpg"},
+    {year:"2026",title:"Steam Power Plant Cycle Study",desc:"Rankine cycle analysis, thermal efficiency, and a reheat improvement proposal.",result:"",tools:"EES, Excel, PowerPoint",link:"https://drive.google.com/drive/folders/1z0DucBEQ_SnVlNFsMpyC1K7hh848LtOA?usp=drive_link",img:"photo_5.jpg"},
+    {year:"2025",title:"Pressure Transducers",desc:"Researched various types of pressure transducers, focusing on their working principles, sensing technologies, and industrial applications.\nEvaluated key performance specifications, including pressure range, accuracy, and signal output, to determine their suitability for different measurement systems.",result:"",tools:"Word",link:"https://drive.google.com/drive/folders/1dhl4pE_YTgSelwBu3aEveRZlh1GgWM_C?usp=drive_link",img:"photo_7.jpg"},
+    {year:"2026",title:"Modified Cycles",desc:"Evaluated performance parameters and thermal efficiency improvements compared to standard power cycles through theoretical analysis and calculations.",result:"",tools:"Word, EES, MATLAB",link:"https://drive.google.com/drive/folders/10W5V8iBRy6zPoDucrqHJXOihZvvsZkfY?usp=drive_link",img:"photo_6.jpg"}
+  ],
+  certs:[
+    {date:"August, 2025",title:"Internship",org:"ExxonMobil",desc:"Observed real-world applications of engineering principles in the Mechanical Sector.\nEnhanced technical skills through hands-on tasks and real-world applications."},
+    {date:"September, 2025",title:"Summer training",org:"Sidi-Kerir Power plant",desc:"Gained practical insight into power generation systems and plant operations."},
+    {date:"August, 2026",title:"Summer training",org:"Beshay Steel",desc:"Participated in mechanical maintenance schedules, equipment troubleshooting, and quality control procedures for steel products."},
+    {date:"2025",title:"Certificate",org:"Dale Carnegie",desc:"Certificate in Effective Communication and Human Relations."},
+    {date:"2020",title:"Certificate",org:"Pentacoders",desc:"Web Front-End development course."}
+  ],
+  awards:[
+    {title:"Member in MIA team",desc:"Robotics team made in Alexandria"},
+    {title:"Volunteering",desc:"Volunteering with a charity organization, helping plan and coordinate their community events."}
+  ]
+};
+
+const $=s=>document.querySelector(s);
+function h(t,a,...c){const e=document.createElement(t);for(const k in a||{}){if(k==='class')e.className=a[k];else if(k.startsWith('on'))e[k]=a[k];else e.setAttribute(k,a[k])}c.flat().forEach(x=>e.append(x));return e}
+const split=s=>(s||'').split(',').map(x=>x.trim()).filter(Boolean);
+const safe=u=>/^https?:\/\//i.test(u||'');
+const ln=(txt,url)=>h('a',{class:'btn ghost',href:url,target:'_blank',rel:'noopener'},txt);
+const fallback=(emoji)=>h('span',{class:'emo'},emoji);
+
+function render(){
+  ['#brand','#heroName','#footName'].forEach(s=>$(s).textContent=D.name);
+  $('#heroTitle').textContent=D.title;$('#heroTag').textContent=D.tagline;
+  const cv=$('#cvBtn');cv.hidden=!D.cv;if(D.cv){cv.href=D.cv;cv.target='_blank';cv.rel='noopener'}
+
+  const ph=$('#photo');
+  if(D.photo){const i=h('img',{src:D.photo,alt:D.name});i.onerror=()=>ph.replaceChildren(fallback('👷'));ph.replaceChildren(i)}
+  else ph.replaceChildren(fallback('👷'));
+
+  $('#bio').textContent=D.bio||'';
+  $('#facts').replaceChildren(...[['📍 Location',D.location],['🎓 Education',D.education],['🌐 Languages',D.languages]].filter(f=>f[1]).map(([l,v])=>h('div',{},h('small',{},l),v)));
+
+  $('#projList').replaceChildren(...D.projects.map(p=>{
+    const im=h('div',{class:'im'});
+    if(p.img){const i=h('img',{src:p.img,alt:p.title||'',loading:'lazy'});i.onclick=()=>{$('#lb img').src=i.src;$('#lb').hidden=false};i.onerror=()=>im.replaceChildren(fallback('⚙️'));im.append(i)}
+    else im.append(fallback('⚙️'));
+    return h('article',{class:'card'},im,h('div',{class:'bd'},h('span',{class:'yr'},p.year||''),h('h3',{},p.title||''),h('p',{},p.desc||''),p.result?h('div',{class:'res'},p.result):'',h('div',{class:'chips'},split(p.tools).map(t=>h('span',{},t))),safe(p.link)?h('a',{class:'lnk',href:p.link,target:'_blank',rel:'noopener'},'View project →'):''))}));
+
+  $('#certList').replaceChildren(...D.certs.map(c=>h('li',{},h('time',{},c.date||''),h('h3',{},c.title||''),h('div',{class:'org'},c.org||''),h('p',{},c.desc||''))));
+  $('#skillList').replaceChildren(...split(D.skills).map(t=>h('span',{},t)));
+  $('#awardList').replaceChildren(...D.awards.map(a=>h('div',{class:'card aw'},h('h3',{},a.title||''),h('p',{},a.desc||''))));
+  const m=$('#mail');m.textContent=D.email;m.href='mailto:'+D.email;
+  $('#links').replaceChildren(...[safe(D.linkedin)?ln('LinkedIn',D.linkedin):'',safe(D.github)?ln('GitHub',D.github):'',D.cv?ln('Download CV',D.cv):''].filter(Boolean));
+}
+render();
+$('#lb').onclick=()=>{$('#lb').hidden=true};
+
+const flow=$('#flow'),fill=$('#fill');
+function upd(){const r=flow.getBoundingClientRect();fill.style.height=Math.min(r.height,Math.max(0,innerHeight*.6-r.top))+'px';fill.style.backgroundSize='100% '+r.height+'px'}
+addEventListener('scroll',upd,{passive:true});addEventListener('resize',upd);upd();
+</script>
+</body>
+</html>
